@@ -12,7 +12,7 @@ custom_guidelines:
       path: "python_checks.doc"
 dependency_check.enabled: yes
 exclude_draft_pr: false
-exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md"
+exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *.pdf, *.txt, *.doc"
 include_source_branches: "*"
 include_target_branches: "*"
 linters_feedback: yes
