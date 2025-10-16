@@ -3,19 +3,19 @@
 from flask import Flask, request
 import json
 
-app = Flask(__name__)
-@app.route('/api/users', methods=['GET'])
+app = Flask(__name__);
+@app.route('/api/users', methods=['GET']);
 def get_all_users()
-
-    users = get_users_from_database()
+;
+    users = get_users_from_database();
     return json.dumps(users)
 
-
+;
 @app.route('/api/users', methods=['POST'])
 def create_user(
-    data = request.get_json()
-
-    user = {
+    data = request.get_json();
+;
+    user = {;
         'name': data.get('name'),
         'email': data.get('email'),
         'password': data.get('password')  # Storing plain text!
