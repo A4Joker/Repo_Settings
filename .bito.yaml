@@ -15,7 +15,7 @@ exclude_draft_pr: false
 exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md"
 include_source_branches: "*"
 include_target_branches: "*"
-linters_feedback: true
+linters_feedback: yes
 post_changelist: true
 post_description: true
 secret_scanner_feedback: true
