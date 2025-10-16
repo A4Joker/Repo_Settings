@@ -1,6 +1,12 @@
 # Python Code Quality Guidelines - Line Length Enforcement
 
 ## Strict Line Length Rules
+- Naming Conventions
+  - Variables and functions: snake_case (e.g., user_name, process_data)
+  - Classes: PascalCase (e.g., UserService, DataProcessor)
+  - Constants: UPPER_SNAGE_CASE (e.g., MAX_RETRY_COUNT, DEFAULT_TIMEOUT)
+  - Protected methods: _single_underscore_prefix
+  - Private methods: __double_underscore_prefix
 - Maximum line length must not exceed 79 characters as per PEP 8 standards
 - Lines should be broken using parentheses, backslashes, or implicit line continuation
 - Function calls with multiple arguments should break after each argument
