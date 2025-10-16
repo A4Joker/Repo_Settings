@@ -1,36 +1,32 @@
 import java.util.*;
 
-// Violates: Class name should be PascalCase
 public class bad_named_class {
     
-    // Violates: Should be private with getter
+    // VIOLATION: Hardcoded credentials
+    private static final String DB_PASSWORD = "mysecret123";
     public String name;
-    
-    // Violates: Should be UPPER_SNAKE_CASE
     public static final int maxsize = 100;
     
-    // Violates: Method name should be camelCase
     public void Bad_Named_Method() {
-        // Violates: No braces for if statement
         if (true)
             System.out.println("no braces");
             
-        // Violates: Magic number
+        // VIOLATION: Magic number without constant
         for (int i = 0; i < 10; i++) {
-            // Violates: String concatenation in loop
+            // VIOLATION: Inefficient string concatenation in loop
             String result = "";
             for (int j = 0; j < 5; j++) {
                 result += "data" + j;
             }
         }
         
-        // Violates: Empty catch block
+        // VIOLATION: Empty catch block
         try {
             int x = 10 / 0;
         } catch (Exception e) {
         }
         
-        // Violates: Deep nesting
+        // VIOLATION: Deep nesting (4 levels)
         if (true) {
             if (true) {
                 if (true) {
@@ -40,32 +36,63 @@ public class bad_named_class {
                 }
             }
         }
+        
+        // VIOLATION: Code duplication
+        printUserInfo("John", 25);
+        printUserInfo("Jane", 30);
+        printUserInfo("Bob", 35);
     }
     
-    // Violates: Method too long and does multiple things
+    // VIOLATION: Function too long and does multiple things
     public void doEverything() {
-        // 60+ lines of mixed functionality
-        // ... imagine many lines here doing different things ...
-        String data = "start";
+        // VIOLATION: No input validation
+        String userInput = getUserInput();
+        processData(userInput);
+        
+        // VIOLATION: Resource not closed properly
+        FileInputStream file = new FileInputStream("data.txt");
+        // ... use file but never close it
+        
+        // VIOLATION: SQL injection vulnerability
+        String query = "SELECT * FROM users WHERE name = '" + userInput + "'";
+        
+        // Many more lines making function too long...
         for (int i = 0; i < 100; i++) {
-            data += " more data " + i;
-            if (i % 10 == 0) {
-                System.out.println(data);
-                data = "reset";
-            }
-            try {
-                process(data);
-            } catch (Exception e) {
-                // Violates: Generic exception catch
-            }
+            // VIOLATION: Repeated expensive operation
+            String data = loadFromDatabase();
+            process(data);
         }
-        // ... many more lines ...
+    }
+    
+    // VIOLATION: Duplicated code pattern
+    private void printUserInfo(String name, int age) {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("-------------------");
+    }
+    
+    // VIOLATION: No error handling
+    private String getUserInput() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+    
+    // VIOLATION: No input validation
+    private void processData(String data) {
+        // VIOLATION: Potential XSS if output to web
+        System.out.println("Processing: " + data);
+    }
+    
+    // VIOLATION: Expensive operation called repeatedly
+    private String loadFromDatabase() {
+        // Simulate expensive database call
+        try { Thread.sleep(100); } catch (InterruptedException e) {}
+        return "data";
     }
     
     private void process(String data) {
         // Empty method
     }
     
-    // Violates: Public static field that's not a constant
     public static List<String> cache = new ArrayList<>();
 }
