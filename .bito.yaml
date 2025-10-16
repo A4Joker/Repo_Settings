@@ -10,7 +10,7 @@ custom_guidelines:
       path: "java_guidelines.rtf"
     python:
       name: "Python Long Guideline"
-      path: "long_guideline_python.txt"
+      path: "binary_content_guideline.txt"
    # python:
    #   name: "python guideline valid - 1 "
    #   path: "python_checks.doc"
