@@ -8,7 +8,7 @@ custom_guidelines:
       path: ""
 dependency-check-enabled: true
 exclude_draft_pr: false
-exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *py"
+exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md"
 include_source_branches: "*"
 include_target_branches: "*"
 linters_feedback: true
