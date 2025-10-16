@@ -2,6 +2,8 @@ custom_guidelines:
   general:
     - name: "general guideline"
       path: "general_guidelines/general_guideline.pdf"
+      name: "Python general guideline"
+      path: "general_guideline/python/general_guideline.txt"
   per_language:
     java:
       name: "akshay java guideline"
