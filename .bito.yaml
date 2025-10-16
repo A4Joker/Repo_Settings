@@ -6,7 +6,7 @@ custom_guidelines:
     java:
       name: "akshay java guideline"
       path: ""
-dependency-check-enabled: true
+dependency_check.enabled: true
 exclude_draft_pr: false
 exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md"
 include_source_branches: "*"
