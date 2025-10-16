@@ -7,6 +7,7 @@
   - Constants: UPPER_SNAGE_CASE (e.g., MAX_RETRY_COUNT, DEFAULT_TIMEOUT)
   - Protected methods: _single_underscore_prefix
   - Private methods: __double_underscore_prefix
+-Functions should have maximum 1 parameters
 - Maximum line length must not exceed 79 characters as per PEP 8 standards
 - Lines should be broken using parentheses, backslashes, or implicit line continuation
 - Function calls with multiple arguments should break after each argument
