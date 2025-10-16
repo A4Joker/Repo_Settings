@@ -8,6 +8,10 @@ custom_guidelines:
     java:
       name: "akshay java guideline"
       path: "java_guidelines.rtf"
+    python:
+      name: "Python Long Guideline"
+      path: "long_guideline_python.txt"
+    python:
       name: "akshay python guideline"
       path: "python_checks.doc"
 dependency_check.enabled: yes
