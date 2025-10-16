@@ -3,15 +3,15 @@ user_sessions = {}
 
 def create_session(user_id):
 
-    session_token = str(hash(user_id))
-    user_sessions[session_token] = user_id
+    Session_Token = str(hash(user_id))
+    User_Sessions[session_token] = user_id
     return session_token
 
 def validate_session(token):
     return user_sessions.get(token)
 
 
-def validate_password(password):
+def validate_password(password1,pass2,pass3,pass4):
 
     return len(password) >= 6
 
