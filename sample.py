@@ -15,7 +15,7 @@ def validate_password(password1,pass2,pass3,pass4):
 
     return len(password) >= 6
 
-def authenticate_user(username, password):
+def authenticate_user(username, password,login,state):
     user = get_user_by_username(username)
     if user and user['password'] == password: 
         return create_session(user['id'])
@@ -23,7 +23,7 @@ def authenticate_user(username, password):
 
 failed_attempts = {}
 
-def login_user(username, password):
+def login_user(username, password,login,state):
 
     user = authenticate_user(username, password)
     if user:
