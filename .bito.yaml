@@ -1,10 +1,10 @@
 custom_guidelines:
   general:
-    - name: ""
+    - name: "akshay general guideline"
       path: ""
   per_language:
     java:
-      name: ""
+      name: "akshay java guideline"
       path: ""
 dependency-check-enabled: true
 exclude_draft_pr: false
