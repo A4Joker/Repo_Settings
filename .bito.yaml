@@ -9,7 +9,7 @@ custom_guidelines:
       name: "Java guideline valid -1 "
       path: "java_guidelines.rtf"
     python:
-      name: "Python Long Guideline"
+      name: "Python binary content Guideline"
       path: "binary_content_guideline.txt"
    # python:
    #   name: "python guideline valid - 1 "
