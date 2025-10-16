@@ -12,7 +12,7 @@ custom_guidelines:
       name: "Python Long Guideline"
       path: "long_guideline_python.txt"
     python:
-      name: "akshay python guideline"
+      name: "python guideline - 1 "
       path: "python_checks.doc"
 dependency_check.enabled: yes
 exclude_draft_pr: false
