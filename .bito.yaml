@@ -1,11 +1,13 @@
 custom_guidelines:
   general:
-    - name: "akshay general guideline"
-      path: "python_checks.doc"
+    - name: "general guideline"
+      path: "general_guidelines/general_guideline.pdf"
   per_language:
     java:
       name: "akshay java guideline"
       path: "java_guidelines.rtf"
+      name: "akshay general guideline"
+      path: "python_checks.doc"
 dependency_check.enabled: true
 exclude_draft_pr: false
 exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md"
