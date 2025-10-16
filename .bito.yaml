@@ -1,9 +1,9 @@
 custom_guidelines:
   general:
-    - name: "general guideline"
-      path: "general_guidelines/general_guideline.pdf"
-      name: "Python general guideline"
-      path: "general_guideline/python/general_guideline.txt"
+    - name: "general guideline large "
+      path: "guidelines/large.txt"
+      name: "Python general guideline binary data"
+      path: "guidelines/binary.data"
   per_language:
     java:
       name: "Java guideline valid -1 "
