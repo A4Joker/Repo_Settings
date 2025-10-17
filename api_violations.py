@@ -4,7 +4,7 @@ from flask import Flask, request
 import json
 
 app = Flask(__name__);
-@app.route('/api/users', methods=['GET']);
+@app.route('/api/users', methods=['GET'])
 def get_all_users()
 ;
     users = get_users_from_database();
