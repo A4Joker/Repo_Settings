@@ -10,7 +10,7 @@ custom_guidelines:
       name: "Python High Priority guideline"
       path: "guidelines/high_priority_guidelines.txt"
       name: "Python function_rules guideline"
-      path: "guidelines/function_rules.txt"
+      path: "guidelines/high_priority_guidelines.txt"
 dependency_check.enabled: yes
 exclude_draft_pr: false
 exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *.pdf, *.txt, *.doc"
