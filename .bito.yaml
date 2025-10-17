@@ -1,18 +1,19 @@
 custom_guidelines:
   general:
-    - name: "general guideline large "
-      path: "guidelines/large.txt"
-      name: "Python general guideline binary data"
-      path: "guidelines/binary.data"
+    - name: ""
+      path: ""
   per_language:
     java:
       name: "Java guideline valid -1 "
       path: "java_guidelines.rtf"
     python:
-      name: "Python long Guideline"
-      path: "long_guideline.txt"
-   #   name: "python guideline valid - 1 "
-   #   path: "python_checks.doc"
+      name: "Python error_rules guideline"
+      path: "guidelines/error_rules.txt"
+      name: "Python function_rules guideline"
+      path: "guidelines/function_rules.txt"
+    python:
+      name: "Python naming_rules guideline"
+      path: "guidelines/naming_rules.txt"
 dependency_check.enabled: yes
 exclude_draft_pr: false
 exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *.pdf, *.txt, *.doc"
