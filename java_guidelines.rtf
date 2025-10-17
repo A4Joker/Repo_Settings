@@ -1,0 +1,45 @@
+# Java Code Quality Guidelines
+
+## Code Structure & Organization
+- All Java files must follow standard package naming convention: com.company.product.module
+- Each public class must reside in its own file named after the class
+- Maximum class length: 500 lines
+- Maximum method length: 50 lines
+- Avoid deeply nested code (maximum 3 levels of nesting)
+
+## Naming Conventions
+- Class names: PascalCase (e.g., UserService, DataProcessor)
+- Method names: camelCase (e.g., getUserData, processRequest)
+- Variable names: camelCase (e.g., userName, itemCount)
+- Constants: UPPER_SNAKE_CASE (e.g., MAX_RETRY_COUNT, DEFAULT_TIMEOUT)
+
+## Code Quality Rules
+- Always use braces {} for control statements (if, for, while)
+- Never use empty catch blocks - log or handle exceptions properly
+- Avoid magic numbers - use named constants
+- Use final for immutable variables and parameters when possible
+- Prefer StringBuilder for string concatenation in loops
+
+## Object-Oriented Principles
+- Fields must be private with getters/setters as needed
+- Prefer composition over inheritance
+- Use interfaces for abstraction
+- Avoid public static fields unless truly constants
+
+## Error Handling
+- Use specific exception types rather than generic Exception
+- Include meaningful error messages in exceptions
+- Log exceptions with appropriate context
+- Use try-with-resources for AutoCloseable objects
+
+## Performance & Memory
+- Close resources in finally blocks or use try-with-resources
+- Avoid creating objects in loops when possible
+- Use primitive types instead of wrapper classes for better performance
+- Prefer foreach loops over traditional for loops when index not needed
+
+## Testing Requirements
+- Unit tests must cover at least 80% of business logic
+- Test methods should follow: given_when_then pattern
+- Each test should test one specific behavior
+- Use meaningful test method names describing the scenario
