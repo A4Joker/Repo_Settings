@@ -1,0 +1,11 @@
+# ZERO TOLERANCE Security & Error Rules
+- No hardcoded credentials
+- No SQL injection vulnerabilities
+- No eval() or exec() with user input
+- No bare except clauses
+- Catch specific exception types
+- Use context managers for resources
+- Validate all user inputs
+- Sanitize all outputs
+- Use parameterized queries
+- No resource leaks allowed
