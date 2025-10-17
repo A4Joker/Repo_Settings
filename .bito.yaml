@@ -1,7 +1,7 @@
 custom_guidelines:
   general:
-    - name: "Python High Priority guideline"
-      path: "guidelines/high_priority_guidelines.txt"
+    - name: ""
+      path: ""
   per_language:
     java:
       name: "Java guideline valid -1 "
