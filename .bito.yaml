@@ -7,8 +7,8 @@ custom_guidelines:
       name: "Java guideline valid -1 "
       path: "java_guidelines.rtf"
     python:
-      name: "Python error_rules guideline"
-      path: "guidelines/error_rules.txt"
+      name: "Python High Priority guideline"
+      path: "guidelines/high_priority_guidelines.txt"
       name: "Python function_rules guideline"
       path: "guidelines/function_rules.txt"
 dependency_check.enabled: yes
