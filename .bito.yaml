@@ -1,4 +1,4 @@
-custom_guidelines:
+1custom_guidelines:
   general:
     - name: ""
       path: ""
@@ -14,13 +14,13 @@ custom_guidelines:
     python:
       name: "Python naming_rules guideline"
       path: "guidelines/naming_rules.txt"
-dependency_check.enabled: yes
-exclude_draft_pr: false
-exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *.pdf, *.txt, *.doc"
-include_source_branches: "*"
-include_target_branches: "*"
+1dependency_check.enabled: yes
+1exclude_draft_pr: false
+1exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *.pdf, *.txt, *.doc"
+1include_source_branches: "*"
+1include_target_branches: "*"
 linters_feedback: yes
-post_changelist: true
-post_description: false
-secret_scanner_feedback: false
-suggestion_mode: comprehensive
+1post_changelist: true
+1post_description: false
+1secret_scanner_feedback: false
+1suggestion_mode: comprehensive
