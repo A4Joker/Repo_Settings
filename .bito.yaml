@@ -9,9 +9,8 @@ custom_guidelines:
       name: "Java guideline valid -1 "
       path: "java_guidelines.rtf"
     python:
-      name: "Python binary content Guideline"
-      path: "binary_content_guideline.txt"
-    python:
+      name: "Python long Guideline"
+      path: "long_guideline.txt"
       name: "python guideline valid - 1 "
       path: "python_checks.doc"
 dependency_check.enabled: yes
