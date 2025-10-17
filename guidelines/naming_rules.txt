@@ -1,0 +1,10 @@
+# STRICT Naming Conventions
+- Class names: PascalCase only (e.g., UserService)
+- Function names: snake_case only (e.g., process_data)
+- Variable names: snake_case only (e.g., user_name)
+- Constants: UPPER_SNAKE_CASE only (e.g., MAX_RETRY_COUNT)
+- No mixedCase variables allowed
+- No single character variables except in loops
+- No abbreviations unless domain-standard
+- No reserved keywords as names
+- Consistent naming across codebase
