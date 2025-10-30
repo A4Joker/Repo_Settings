@@ -1,0 +1,8 @@
+Below Issues should be high priority issues
+- Code contains lambda function > Importance -: High
+- File read operation without with > Importance -: High
+- No else for every if condition > Importance -: High
+- use of dictionary > Importance -: High
+- use of If True: or If true: > Importance -: High
+- lambda assignment  > Importance -: High
+- implicit return > Importance -: High
