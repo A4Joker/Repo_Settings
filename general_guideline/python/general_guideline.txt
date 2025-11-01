@@ -1,0 +1,64 @@
+# General Code Quality Guidelines (Language Agnostic)
+
+## Security & Safety Rules
+- Never hardcode passwords, API keys, or sensitive credentials
+- Validate all user inputs before processing
+- Use parameterized queries to prevent SQL injection
+- Implement proper authentication and authorization checks
+- Sanitize all outputs to prevent XSS attacks
+
+## Code Readability & Maintainability
+- Functions/methods should have a single responsibility
+- Use meaningful and descriptive names for variables, functions, and classes
+- Avoid deep nesting of control structures (max 3 levels)
+- Keep functions short and focused (max 50 lines recommended)
+- Use comments to explain "why" not "what"
+
+## Error Handling & Reliability
+- Never use empty catch blocks or ignore exceptions
+- Provide meaningful error messages for debugging
+- Handle edge cases and boundary conditions
+- Implement proper logging for errors and important events
+- Use specific exception types rather than generic ones
+
+## Performance & Efficiency
+- Avoid unnecessary object creation in loops
+- Use efficient data structures for the task
+- Minimize database/API calls in loops
+- Cache expensive operations when appropriate
+- Close resources properly (files, connections, streams)
+
+## Code Duplication & Reusability
+- Follow DRY (Don't Repeat Yourself) principle
+- Extract repeated code into reusable functions/methods
+- Use constants for magic numbers and string literals
+- Create helper functions for common operations
+- Avoid copy-pasting code blocks
+
+## Testing & Quality Assurance
+- Write unit tests for critical business logic
+- Test edge cases and error conditions
+- Use descriptive test names that explain the scenario
+- Maintain reasonable test coverage (>80% for core logic)
+- Include integration tests for important workflows
+
+## Documentation & Standards
+- Document public APIs and interfaces
+- Keep documentation updated with code changes
+- Follow established coding standards and style guides
+- Use consistent formatting throughout the codebase
+- Include README files for complex modules
+
+## Memory & Resource Management
+- Properly dispose of resources (files, connections, memory)
+- Avoid memory leaks by managing object lifecycles
+- Use appropriate data structures to minimize memory usage
+- Monitor for resource exhaustion in production
+- Implement cleanup procedures for long-running processes
+
+## Security Scanning Checks
+- Scan for potential security vulnerabilities
+- Check for unsafe function usage
+- Validate cryptographic implementations
+- Review authentication and session management
+- Audit access control mechanisms
