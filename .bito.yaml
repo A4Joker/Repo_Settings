@@ -21,3 +21,4 @@ post_changelist: true
 post_description: true
 secret_scanner_feedback: true
 suggestion_mode: comprehensive
+negative_rules_enabled: true

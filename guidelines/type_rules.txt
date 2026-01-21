@@ -1,0 +1,10 @@
+# MANDATORY Type Annotations & Documentation
+- All function parameters must have type annotations
+- All function returns must have type annotations  
+- All class attributes must have type annotations
+- All public functions must have Google-style docstrings
+- All classes must have docstrings
+- No "Any" type unless absolutely necessary
+- Use typing module for complex types
+- Consistent return types required
+- No undocumented public APIs
