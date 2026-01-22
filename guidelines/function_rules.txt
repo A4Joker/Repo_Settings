@@ -1,0 +1,11 @@
+# STRICT Function Design Rules
+- Maximum 3 parameters per function
+- Maximum 25 lines per function
+- Single responsibility principle
+- No side effects unless documented
+- Consistent return types
+- No global state dependencies
+- Pure functions when possible
+- Early returns encouraged
+- Guard clauses for validation
+- No dead code allowed
