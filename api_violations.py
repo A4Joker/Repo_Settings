@@ -39,7 +39,7 @@ def create_user():
     user = {
         'name': data.get('name'),
         'email': data.get('email'),
-        'password': data.get('password')  # Storing plain text!
+         'password': generate_password_hash(data.get('password'))
     }
     
     save_user(user)
