@@ -1,0 +1,23 @@
+custom_guidelines:
+  general:
+    - name: ""
+      path: ""
+  per_language:
+    java:
+      name: "Java guideline valid -1 "
+      path: "java_guidelines.rtf"
+    python:
+      name: "Python High Priority guideline"
+      path: "guidelines/high_priority_guidelines.txt"
+      name: "Python function_rules guideline"
+      path: "guidelines/high_priority_guidelines.txt"
+dependency_check.enabled: yes
+exclude_draft_pr: false
+exclude_files: "*.xml, *.json, *.properties, .gitignore, *.yml, *.md, *.pdf, *.txt, *.doc"
+include_source_branches: "*"
+include_target_branches: "*"
+linters_feedback: yes
+post_changelist: true
+post_description: true
+secret_scanner_feedback: true
+suggestion_mode: comprehensive
